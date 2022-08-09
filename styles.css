@@ -1,3 +1,121 @@
-/* h1 {
-    color: red;
-} */
+@font-face {
+    font-family: SuperMario256;
+    src:url(SuperMario256.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.play-area {
+    height: 100vh;
+    /* vh is viewport height */
+    display: flex;
+    background: rgb(0, 143, 206);
+}
+header {
+    font-family: SuperMario256;
+    padding: 15px;
+    height: 100px;
+    border: 1px solid  rgb(252, 202, 38);
+    background-color: rgb(226, 35, 33);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(252, 202, 38);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+header.stop-watch {
+   background-color: rgb(0, 143, 206);
+   width: 280px;
+  
+}
+
+ul {
+    margin-right: 90px;
+    padding-top: 30px;
+    font-size: 30px;
+    
+}
+
+.memory-game {
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    object-fit: cover;
+    display:flex;
+    align-content: center;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    
+    
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    /* This deducts the margin to keep the cards in the container */
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 1.3s;
+    
+    
+    
+}
+
+/* Click effect */
+.memory-card:active {
+    /* adjust card size on click */
+    transform: scale(.97);
+    transition: transform .2s;
+    
+}
+
+.memory-card_flip {
+    width: calc(25% - 10px);
+    /* This deducts the margin to keep the cards in the container */
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: rotateY(180deg);
+    opacity: 10;
+    transition: transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+}
+
+.front-face, .back-face  {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: yellow;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+}
+
+.front-face {
+    transform: rotateY(180deg);
+    
+    
+}
+
+.back-face {
+  
+ 
+}
+
+img {
+    height: 10em;
+    width: auto;
+}
+
