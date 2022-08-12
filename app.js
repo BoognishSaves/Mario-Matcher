@@ -81,6 +81,7 @@ function flipCard() {
     if (document.querySelectorAll(".memory-card_flip").length === 16) {
                 endOfGame()
                 playSoundCongrats()
+                
             }
 }
 
@@ -134,7 +135,8 @@ function endOfGame() {
     setTimeout(() => {
         timerDisplay.innerText = '00:00';
         congratsMessage.innerText = " "
-      },  10000)
+    },  10000)
+   
 
 
 }
