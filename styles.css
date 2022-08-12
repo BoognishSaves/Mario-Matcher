@@ -28,6 +28,20 @@ header {
     justify-content: center;
 }
 
+#victory {
+    font-family: SuperMario256;
+    padding: 15px;
+    bottom: 30px;
+    height: 10px;
+    border: 1px solid  rgb(252, 202, 38);
+    background-color: rgb(226, 35, 33);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(252, 202, 38);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 header.stop-watch {
    background-color: rgb(0, 143, 206);
    width: 280px;
@@ -109,10 +123,7 @@ ul {
     
 }
 
-/* .back-face {
-  
- 
-} */
+
 
 img {
     height: 10em;
