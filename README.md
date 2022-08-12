@@ -26,7 +26,7 @@
 
 ## Technology Used:
 ### HTML was used to structure the gameboard and cards. Each card being assigned a front and back photo. Additionally, this is where the sounds were stored for later reference.
-### CSS styled the HTML elements and added the 3D card flipping animation. I was able to find the fint used in the Alt-H2 Super Mario Brothers Alt-H2 game. 
+### CSS styled the HTML elements and added the 3D card flipping animation. I was able to find the font used in the Super Mario Brothers game. 
 ### JavaScript was the key to the functionality. It controlled the flipping cards based upon 'clicks' that triggered DOM elements. 'if' statements were used to determine the first and second cards and determine if they matche![splitandjoinfun](https://user-images.githubusercontent.com/100719674/184265274-c4bccab8-9e9d-4f04-a966-7285aa5f50a9.png)
 d. A 'for' loop was used to deteremine mismatches and return the cards to their original state.
 
